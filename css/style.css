@@ -1,0 +1,200 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+ul{
+    padding: 0px!important;
+}
+
+.Menu_Principal{
+    width: none;width: 100%;
+    background-color: #A33033;
+    height: 60px;
+}
+
+
+main, .content{
+    margin: auto;
+    max-width: 980px;
+    min-width: 200px;
+    position: relative;
+
+}
+
+.logo{
+    float: left;
+    padding: 5px;
+    padding-left: 20px;
+    max-width: 75%;
+    min-width: 50%;
+}
+
+#logowpp{
+    padding: 2.5%;
+    max-height: 25px;
+}
+#logoinsta{
+    padding: 2.5%;
+    height: 25px;
+}
+
+.redes-sociais ul li{
+    margin-left: 15px;
+    display: inline-block;
+    /*float: left;*/
+    list-style: none;
+}
+.redes-sociais{
+    width: 20%;
+    float: right;
+}
+
+.header-2{
+    background-color: rgb(255, 255, 255);
+    max-width: 980px;
+    min-width: 200px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.menu-urls{
+    margin: auto;
+    max-width: 100%;
+    min-width: 200px;
+    padding: 2px;
+    border-bottom: 2px solid  rgb(12, 12, 12);
+}
+.menu ul li{
+    display: inline-block;/*separar os link e retirar os pontos de marcação*/
+    color: black;
+    margin-left: 15px;
+    height: 35px;
+}
+.menu ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+/*hover: quando o mause em cima dos links*/
+.menu ul li a:hover{
+    color: rgb(199, 5, 12);
+}
+.menu ul li:hover{
+    border-bottom: 10px solid  rgb(199, 5, 12);
+}
+.menu{
+    width: 60%;
+    float: left;
+}
+.busca{
+    width: 40%;
+    float: right;
+    text-align: center;
+}
+.busca input{
+    background-image: url('../img/lupa_icon.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    margin-top: 7px;
+    height: 29px;
+    padding-left: 12px;
+    width: 210px;
+    border: 1px solid #928d8d;
+}
+
+.col-100{
+    width: 100%;
+    float: left;
+    height: 52%;
+}
+
+#img01{
+    width: 100%;
+}
+#img02{
+    width: 100%;
+}
+
+/*pegando a tag do button*/
+button.slick-prev{
+    font-size: 0px;
+    border: none;
+    width: 50px;
+    height: 35px;
+    z-index: 10;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../img/anterior_icon.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 45%;
+    left: 1%;
+}
+
+button.slick-next{
+    font-size: 0px;
+    border: none;
+    width: 5%;
+    height: 100%;
+    z-index: 10;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../img/proximo_icon.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 45%;
+    right: 1%;
+}
+
+
+.slider-principal{
+    width: 100%;
+}
+
+.slick-initialized{
+    overflow: hidden;
+}
+
+.slick-dots li button{
+    font-size: 0%;
+    border: 6px solid rgb(255, 255, 255);
+    width: 26px;
+    height: 26px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    left: 50%;
+
+}
+.slick-dots{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 90%
+}
+.slick-dots li {
+    padding-left: 10px;
+    display: inline-block;/*deixar um botão do lado do outro*/
+}
+
+/*classe selecionada no slider:*/
+li.slick-active button{
+    background: #910408;
+}
+
+.texto-destaque p{
+    text-align:justify;
+}
+.texto-destaque h1{
+    padding-top: 2%;
+    text-align:left;
+    color: #910408;
+}
+.texto-destaque p{
+    color: #3d3535;
+    
+}
