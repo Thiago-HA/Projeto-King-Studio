@@ -198,3 +198,9 @@ li.slick-active button{
     color: #3d3535;
     
 }
+
+.col-3 {
+    width: 29%;
+    float: left;
+    position: relative;
+}
