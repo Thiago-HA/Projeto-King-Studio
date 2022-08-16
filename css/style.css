@@ -17,7 +17,7 @@ ul{
 
 main, .content{
     margin: auto;
-    max-width: 980px;
+    max-width: 1080px;
     min-width: 200px;
     position: relative;
 
@@ -63,13 +63,12 @@ main, .content{
     margin: auto;
     max-width: 100%;
     min-width: 200px;
-    padding: 2px;
     border-bottom: 2px solid  rgb(12, 12, 12);
 }
 .menu ul li{
     display: inline-block;/*separar os link e retirar os pontos de marcação*/
     color: black;
-    margin-left: 15px;
+    margin-left: 3%;
     height: 35px;
 }
 .menu ul li a{
@@ -83,10 +82,10 @@ main, .content{
     color: rgb(199, 5, 12);
 }
 .menu ul li:hover{
-    border-bottom: 10px solid  rgb(199, 5, 12);
+    border-bottom: 5px solid  rgb(199, 5, 12);
 }
 .menu{
-    width: 60%;
+    width: 50%;
     float: left;
 }
 .busca{
@@ -200,7 +199,23 @@ li.slick-active button{
 }
 
 .col-3 {
-    width: 29%;
+    padding-left: 10%;
+    width: 20%;
     float: left;
     position: relative;
+}
+
+.bloco-texto{
+    margin-top: 3em;
+}
+
+.bloco-texto h3{
+    font-size: 1.8em;
+    text-align: center;
+    color:#3d3535
+}
+
+.bloco-texto p {
+    font-size: 1.2em;
+    text-align: center;
 }
