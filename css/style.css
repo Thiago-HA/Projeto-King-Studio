@@ -79,10 +79,11 @@ main, .content{
 }
 /*hover: quando o mause em cima dos links*/
 .menu ul li a:hover{
-    color: rgb(199, 5, 12);
-}
-.menu ul li:hover{
-    border-bottom: 5px solid  rgb(199, 5, 12);
+    color: #910408;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    border-bottom: 4px solid #910408
+    
 }
 .menu{
     width: 50%;
@@ -121,7 +122,7 @@ main, .content{
 button.slick-prev{
     font-size: 0px;
     border: none;
-    width: 50px;
+    width: 2%;
     height: 35px;
     z-index: 10;
     background-color: transparent;
@@ -136,7 +137,7 @@ button.slick-prev{
 button.slick-next{
     font-size: 0px;
     border: none;
-    width: 5%;
+    width: 2%;
     height: 100%;
     z-index: 10;
     background-color: transparent;
@@ -192,30 +193,45 @@ li.slick-active button{
     padding-top: 2%;
     text-align:left;
     color: #910408;
+    font-size: max(30px, 3.3vw);
+    margin: 5%;
 }
 .texto-destaque p{
     color: #3d3535;
-    
+    font-size: max(20px, 1.5vw);
+    margin: 5%;
 }
 
 .col-3 {
-    padding-left: 10%;
-    width: 20%;
+    padding-left: 5%;
+    /*width: 20%;*/
     float: left;
-    position: relative;
 }
 
 .bloco-texto{
-    margin-top: 3em;
+    width: 300px;
+    height: 400px;
+    flex-wrap: wrap;
 }
 
 .bloco-texto h3{
     font-size: 1.8em;
     text-align: center;
-    color:#3d3535
+    color:#3d3535;
 }
 
 .bloco-texto p {
     font-size: 1.2em;
     text-align: center;
+    padding-bottom: 20%;
+}
+
+.bloco-texto img{
+    padding-left: 15%;
+}
+
+.texto-options{
+    width: 100%;
+    display: inline-block;
+    flex-direction: row;
 }
