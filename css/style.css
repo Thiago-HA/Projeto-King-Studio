@@ -32,28 +32,28 @@ main, .content{
 }
 
 #logowpp{
-    padding: 2.5%;
+    padding: 2.5px;
     max-height: 25px;
 }
 #logoinsta{
-    padding: 2.5%;
+    padding: 2.5px;
     height: 25px;
 }
 
 .redes-sociais ul li{
     margin-left: 15px;
     display: inline-block;
-    /*float: left;*/
     list-style: none;
 }
 .redes-sociais{
-    width: 20%;
+    width: 30%;
     float: right;
 }
 
+
 .header-2{
     background-color: rgb(255, 255, 255);
-    max-width: 980px;
+    max-width: 1080px;
     min-width: 200px;
     margin: auto;
     padding-bottom: 10px;
@@ -62,7 +62,6 @@ main, .content{
 .menu-urls{
     margin: auto;
     max-width: 100%;
-    min-width: 200px;
     border-bottom: 2px solid  rgb(12, 12, 12);
 }
 .menu ul li{
@@ -74,7 +73,7 @@ main, .content{
 .menu ul li a{
     color: black;
     text-decoration: none;
-    font-size: 16px;
+    font-size: max(15px, 19px);
     text-transform: uppercase;
 }
 /*hover: quando o mause em cima dos links*/
@@ -86,7 +85,7 @@ main, .content{
     
 }
 .menu{
-    width: 50%;
+    width: 60%;
     float: left;
 }
 .busca{
@@ -189,12 +188,19 @@ li.slick-active button{
 .texto-destaque p{
     text-align:justify;
 }
+@font-face {
+    font-family: 'SF TransRobotics' ;
+    src: url('/fonts/SF\ TransRobotics\ Extended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 .texto-destaque h1{
     padding-top: 2%;
     text-align:left;
     color: #910408;
     font-size: max(30px, 3.3vw);
     margin: 5%;
+    font-family: Times , 'SF TransRobotics';
 }
 .texto-destaque p{
     color: #3d3535;
