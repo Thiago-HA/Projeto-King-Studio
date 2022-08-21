@@ -9,3 +9,13 @@ $('.slider-principal').slick({
 });
 
 
+const btnMobile = document.getElementById('btn-mobile');
+
+function activeMneu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active')
+}
+
+btnMobile.addEventListener('click', activeMneu)
+
+
