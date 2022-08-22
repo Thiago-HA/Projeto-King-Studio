@@ -106,15 +106,15 @@ main, .content{
 #btn-mobile{
     display: none;
 }
+#icon-menu{
+    visibility: hidden;
+}
 
 @media(max-width:700px){
-    #btn-mobile{
-        display: block;
-    }
     #header{
         padding-left: 5px;
         background-color:#A33033;
-        height: 30px;
+        height: 35px;
     }
     #menu{
         display: block;
@@ -134,7 +134,8 @@ main, .content{
     }
     
     #nav{
-        padding-left: 46%;
+        float: right;
+        padding-right: 0%;
     }
     
     #nav ul li{
@@ -161,6 +162,26 @@ main, .content{
         visibility: visible;
         overflow-y: auto;
     }
+
+    #btn-mobile{
+        background: none;
+        border: none;
+        display: flex;
+        cursor: pointer;
+    }
+    #icon-menu{
+        visibility: visible;
+        width: 25px;
+        height: 20px;
+    }
+
+    #nav.active{
+        /*background-color: aqua;
+        background-image: url('../img/lupa_icon.png');
+        background: no-repeat;*/
+    }
+    
+    
 }
 
 
