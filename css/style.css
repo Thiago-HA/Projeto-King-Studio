@@ -70,8 +70,6 @@ main, .content{
      text-transform: uppercase;
      font-size: max(18px, 1.5vw);
 
-
-
 }
 #nav ul li a:hover{
     color: #910408;
@@ -88,6 +86,7 @@ main, .content{
     padding-left: 20%;
     width: 100%;
     border-bottom: black solid 2px;
+    background-color: white;
 }
 
 #nav{
@@ -99,8 +98,6 @@ main, .content{
     list-style: none;
     gap: 1rem;
     align-items: center;
-    float: left;
-
 }
 
 #btn-mobile{
@@ -110,7 +107,19 @@ main, .content{
     visibility: hidden;
 }
 
+.menu-redes{
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+}
+.slider-principal{
+    padding-top: 114px;
+}
+
 @media(max-width:700px){
+    .slider-principal{
+        padding-top: 94px;
+    }
     #header{
         padding-left: 5px;
         background-color:#A33033;
@@ -158,7 +167,7 @@ main, .content{
 
     #nav.active #menu{
         display: block;
-        height: 25%;
+        height: 30vh;
         visibility: visible;
         overflow-y: auto;
     }
@@ -174,13 +183,6 @@ main, .content{
         width: 25px;
         height: 20px;
     }
-
-    #nav.active{
-        /*background-color: aqua;
-        background-image: url('../img/lupa_icon.png');
-        background: no-repeat;*/
-    }
-    
     
 }
 
@@ -204,6 +206,7 @@ main, .content{
     width: 100%;
     float: left;
     height: 52%;
+    background-color: white;
 }
 
 #img01{
@@ -314,6 +317,7 @@ li.slick-active button{
     width: 300px;
     height: 400px;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .bloco-texto h3{
@@ -325,15 +329,114 @@ li.slick-active button{
 .bloco-texto p {
     font-size: 1.2em;
     text-align: center;
-    padding-bottom: 20%;
 }
 
-.bloco-texto img{
-    padding-left: 15%;
-}
 
 .texto-options{
     width: 100%;
     display: inline-block;
     flex-direction: row;
 }
+
+/**********************************/
+/*Footer:*/
+
+.container-footer{
+    border-top: #910408 solid .8vw;
+    background-color:#505050;
+    align-items: center;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+#king-logo-footer{
+    /*Altura dinamica:*/
+    height: 10vw;
+    min-height: 100px;
+    max-height: 200px;
+    /*Largura dinamica*/
+    width: 20vw;
+    min-width: 200px;
+    max-width: 400px;
+    display: flex;
+    margin: auto;
+}
+.logo-camada{
+    border-bottom: white solid 2px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+#icon-footer{
+    width: 2vw;
+    min-height: 20px;
+    min-width: 20px;
+    /**/
+    height: 2vw;
+    max-width: 30px;
+    max-height: 30px;
+    display: flex;
+    float: left;
+}
+
+.inf-mais-icon{
+    display: flex;
+    width: 300px;
+    gap: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    
+    align-items: center;
+    
+}
+
+.bloco-inf{
+    display: flex;
+    display: inline;
+    float: left;
+    margin: auto;
+}
+
+.bloco-inf p{
+    color: #ababab;
+    width: 300px;
+    float: left;
+    margin: 0px;
+    text-align:center;
+    margin-bottom: 20px;
+    height: 55px;
+}
+.inf-mais-icon h4{
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+    float: left;
+}
+
+.footer-texto{
+    margin: auto;
+    max-width: 1080px;
+    min-width: 200px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media(max-width:925px){
+    .footer-texto{
+        display: flex;
+        flex-direction: column;
+    }
+    .bloco-inf p{
+        height: auto;
+    }
+    .inf-mais-icon {
+        align-items: center;
+    }
+}
+
