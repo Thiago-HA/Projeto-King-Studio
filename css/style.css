@@ -308,7 +308,7 @@ li.slick-active button{
 }
 
 .col-3 {
-    padding-left: 5%;
+    padding-left: 1vw;
     /*width: 20%;*/
     float: left;
 }
@@ -316,8 +316,6 @@ li.slick-active button{
 .bloco-texto{
     width: 300px;
     height: 400px;
-    flex-wrap: wrap;
-    text-align: center;
 }
 
 .bloco-texto h3{
@@ -335,7 +333,16 @@ li.slick-active button{
 .texto-options{
     width: 100%;
     display: inline-block;
-    flex-direction: row;
+}
+@media(max-width:685px){
+    .texto-options {
+        width: 100%;
+        display: flex;
+        /* flex-direction: row; */
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
 }
 
 /**********************************/
@@ -439,4 +446,5 @@ li.slick-active button{
         align-items: center;
     }
 }
+
 
