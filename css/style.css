@@ -12,6 +12,15 @@ ul{
     width: none;width: 100%;
     background-color: #A33033;
     height: 60px;
+    display: inline-block;
+    justify-content: center;
+}
+
+
+.Barra-header-01{
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 
@@ -23,13 +32,7 @@ main, .content{
 
 }
 
-.logo{
-    float: left;
-    padding-top: 5px;
-    padding-left: 20px;
-    max-width: 75%;
-    min-width: 50%;
-}
+
 
 #logowpp{
     /*Altura dinamica:*/
@@ -54,10 +57,10 @@ main, .content{
 
 .redes-sociais ul li{
     margin-left: 15px;
-    display: inline-block;
+    display:inline-flex;
     list-style: none;
 }
-.redes-sociais{
+/*.redes-sociais{
     width: 30%;
     float: right;
     height: 20px;
@@ -95,7 +98,7 @@ main, .content{
 #menu{
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
 }
 
