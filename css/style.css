@@ -19,16 +19,17 @@ ul{
 
 .Barra-header-01{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
 
 main, .content{
     margin: auto;
-    max-width: 1080px;
+    max-width: 100%;
     min-width: 200px;
     position:relative;
+    max-width: 1080px;
 
 }
 
@@ -184,6 +185,10 @@ main, .content{
         visibility: visible;
         width: 25px;
         height: 20px;
+    }
+
+    .Barra-header-01{
+        justify-content: space-between;
     }
     
 }
@@ -358,6 +363,7 @@ li.slick-active button{
     width: 100%;
     text-align: center;
     padding-bottom: 20px;
+    
 }
 
 
@@ -449,4 +455,8 @@ li.slick-active button{
     }
 }
 
+.map-responsive{
+    display: flex;
+    justify-content: center;
+}
 
