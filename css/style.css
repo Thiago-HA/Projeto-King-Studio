@@ -8,6 +8,23 @@ ul{
     padding: 0px!important;
 }
 
+/*   NOVO MENU: */
+
+.container-manu{
+    display: flex;
+    background-color:#A33033 ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.menu-principal{
+    width: 75%;
+}
+
+
+/*               */
+
 .Menu_Principal{
     width: none;width: 100%;
     background-color: #A33033;
@@ -120,6 +137,7 @@ main, .content{
 }
 
 @media(max-width:700px){
+    
     .slider-principal{
         padding-top: 94px;
     }
@@ -211,8 +229,7 @@ main, .content{
 /*******************************************/
 .col-100{
     width: 100%;
-    float: left;
-    height: 52%;
+    padding-top: 110px;
     background-color: white;
 }
 
